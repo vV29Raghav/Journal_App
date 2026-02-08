@@ -13,6 +13,7 @@ import java.util.*;
 @Document(collection = "journal_entries")
 
 @Data
+@NoArgsConstructor
 public class JournalEntry {
 
     @Id
