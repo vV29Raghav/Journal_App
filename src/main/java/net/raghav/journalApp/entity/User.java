@@ -26,6 +26,7 @@ public class User {
     private String userName;
     @NonNull
     private String password;
+    private List<String> roles;
 
     //Here we make a type of parent child to put the reference of actual journal ids here
     @DBRef
