@@ -32,10 +32,10 @@ public class JournalEntryControllerWithoutInMemory {
         String userName = authentication.getName();
         User user = userService.findByUserName(userName);
         List<JournalEntry> all = user.getJournalEntries();
-        if(all != null && !all.isEmpty()) {
+        if(all != null) {
             return new ResponseEntity<>(all, HttpStatus.OK);
         }
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(new ArrayList<>(), HttpStatus.OK);
     }
 
     @PostMapping
