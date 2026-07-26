@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Environment Variables (never commit secrets) ###
+.env
+.env.local
+backend/.env
+# .env.example files ARE safe to commit (they contain no real secrets)
